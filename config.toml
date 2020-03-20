@@ -5,5 +5,8 @@ theme = "noteworthy"
 tags = ["brainstorming", "about"] 
 publishDir = "docs"
 
+# Programming
+github = "https://github.com/meisenlab"
+
 
 

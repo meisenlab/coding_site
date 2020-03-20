@@ -3,3 +3,5 @@ languageCode = "en-us"
 title = "Eisen Lab Coding Club"
 theme = "noteworthy"
 tags = ["brainstorming", "about"] 
+publishDir: "docs"
+

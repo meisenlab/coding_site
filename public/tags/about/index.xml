@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on Eisen Lab Coding Club</title>
+    <link>http://example.org/tags/about/</link>
+    <description>Recent content in about on Eisen Lab Coding Club</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Mar 2020 09:54:08 -0700</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Organization and Brainstorming</title>
+      <link>http://example.org/posts/my-first-post/</link>
+      <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
+      
+      <guid>http://example.org/posts/my-first-post/</guid>
+      <description>Welcome! This first post is to hold the notes for discussing organization and brainstorming for the Eisen Lab Coding Club. The purpose of this group is to (1) Meet regularly in order to not go crazy and (2) Share computational knowlege. We choose to unify our learning under the theme of &amp;ldquo;Confocal Image Analysis with Python&amp;rdquo;, since we all use confocal data to some extent. We will frame the topics of our topics/lessons under this theme, but are open to other topics.</description>
+    </item>
+    
+  </channel>
+</rss>

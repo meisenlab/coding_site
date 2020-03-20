@@ -3,37 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/tags/about/</loc>
+    <loc>https://meisenlab.github.io/coding_site/tags/about/</loc>
     <lastmod>2020-03-20T09:54:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/brainstorming/</loc>
+    <loc>https://meisenlab.github.io/coding_site/tags/brainstorming/</loc>
     <lastmod>2020-03-20T09:54:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://meisenlab.github.io/coding_site/</loc>
     <lastmod>2020-03-20T09:54:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
+    <loc>https://meisenlab.github.io/coding_site/posts/my-first-post/</loc>
     <lastmod>2020-03-20T09:54:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://meisenlab.github.io/coding_site/posts/</loc>
     <lastmod>2020-03-20T09:54:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://meisenlab.github.io/coding_site/tags/</loc>
     <lastmod>2020-03-20T09:54:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://meisenlab.github.io/coding_site/categories/</loc>
   </url>
   
 </urlset>

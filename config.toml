@@ -8,5 +8,7 @@ publishDir = "docs"
 # Programming
 github = "https://github.com/meisenlab"
 
-
+## Pigments
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
 

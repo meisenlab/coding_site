@@ -92,7 +92,7 @@
     
     
     
-    <a class="social-icon" href="#" target="_blank" rel="noopener" title="GitHub">
+    <a class="social-icon" href="https://github.com/meisenlab" target="_blank" rel="noopener" title="GitHub">
         <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
             <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
         </svg>
@@ -158,7 +158,11 @@
 <li>Frequent uses: <code>cd name_of_directory</code> or <code>cd ..</code> move back one directory.  If you use just <code>cd</code> without anything after you will navigate to your &ldquo;home&rdquo; directory.</li>
 </ul>
 </li>
-<li><code>open</code>: If you are using a mac, <code>open</code> is amazing. It basically acts analogously to clicking on something.</li>
+<li><code>open</code>: If you are using a mac, <code>open</code> is amazing. It basically acts analogously to clicking on something.
+<ul>
+<li>Frequent uses: <code>open .</code> will open your current directory in finder. <code>open example_file.md</code> will open a file in whatever default program your computer opens it.  <em>Let me know if you want to know how to change your default program settings!</em></li>
+</ul>
+</li>
 </ul>
 <p>Those are the three main commands, we will add some more later.</p>
 <h3 id="part-1---building-a-static-website-with-hugo">Part 1 - Building a static website with Hugo.</h3>
@@ -168,6 +172,15 @@
 <li>Follow this tutorial: <a href="https://gohugo.io/getting-started/quick-start/">Quick Start</a></li>
 <li>Change the theme by picking your favorite theme <a href="https://themes.gohugo.io/">here</a></li>
 </ol>
+<h4 id="part-1-tips">Part 1 Tips</h4>
+<ul>
+<li>A nice set up for working on your site is two terminal windows and a browser window open. Have one terminal window always open &ldquo;serving&rdquo; your website locally <code>hugo server -D</code>.  That way, when you make changes, you can immediately see what changed on your browser window.</li>
+<li>Each theme is configured differently.  The best way to understand how to easily manipulate your website is to find a Github repo with all the code for an example website.  Then poke around what they did.</li>
+<li>If you want to play with the theme and styles of your website, you will usually have to mess with .ccs files.  This can be a little confusing, but just google it. For example, in order to change text color for <code>code text</code>, I found how to do that on <a href="https://stackoverflow.com/questions/38821339/hugo-pygments-how-to-change-highlighting-theme">Stackoverflow here</a>.</li>
+<li>When changing css files, sometimes it is good to comment using text you know is not in other places.  In .css files to make a comment you start a comment with <code>/*</code> , and end it with <code>*/</code>  For example: <code>/* This text is a commented out */</code></li>
+</ul>
+<h2 id="part-2---hosting-on-github">Part 2 - Hosting on Github</h2>
+<p>This will take</p>
 
         </p>
     </div>
@@ -233,7 +246,7 @@
     
     
     
-    <a class="social-icon" href="#" target="_blank" rel="noopener" title="GitHub">
+    <a class="social-icon" href="https://github.com/meisenlab" target="_blank" rel="noopener" title="GitHub">
         <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
             <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
         </svg>

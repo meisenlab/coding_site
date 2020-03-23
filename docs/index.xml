@@ -17,7 +17,7 @@
       <pubDate>Sun, 22 Mar 2020 09:54:08 -0700</pubDate>
       
       <guid>https://meisenlab.github.io/coding_site/posts/czi_intro/</guid>
-      <description>Dependencies for Intro to working with CZI files for image analysisBefore we get into image analysis we will have to go through the hellish process of installing shit. I personally hate this the most because all of this work is riddled with the anxiety that it is all for nothing because the program might not be right for what I am doing anyway.</description>
+      <description>Dependencies for Intro to working with CZI files for image analysisBefore we get into image analysis we will have to go through the hellish process of installing shit.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
       
       <guid>https://meisenlab.github.io/coding_site/posts/building_website/</guid>
-      <description>There are three main reasons I would like to start this series with a website tutorial. 1. A website allows you to communicate to world the easiest - especially communicating your work through your own personal website 2. If you host your website on Github, this is an excellent way to learn how to use Git. 3. Understanding how to use git and being able to build a website allows you to collaboratively build content.</description>
+      <description>There are three main reasons I would like to start this series with a website tutorial.</description>
     </item>
     
     <item>
@@ -35,7 +35,16 @@
       <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
       
       <guid>https://meisenlab.github.io/coding_site/posts/my-first-post/</guid>
-      <description>Welcome! This first post is to hold the notes for discussing organization and brainstorming for the Eisen Lab Coding Club. The purpose of this group is to (1) Meet regularly in order to not go crazy and (2) Share computational knowlege. We choose to unify our learning under the theme of &amp;ldquo;Confocal Image Analysis with Python&amp;rdquo;, since we all use confocal data to some extent. We will frame the topics of our topics/lessons under this theme, but are open to other topics.</description>
+      <description>Welcome! This first post is to hold the notes for discussing organization and brainstorming for the Eisen Lab Coding Club.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://meisenlab.github.io/coding_site/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/about/</guid>
+      <description>We are from the Eisen (Mike) Lab.</description>
     </item>
     
   </channel>

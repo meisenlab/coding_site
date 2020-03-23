@@ -179,8 +179,23 @@
 <li>If you want to play with the theme and styles of your website, you will usually have to mess with .ccs files.  This can be a little confusing, but just google it. For example, in order to change text color for <code>code text</code>, I found how to do that on <a href="https://stackoverflow.com/questions/38821339/hugo-pygments-how-to-change-highlighting-theme">Stackoverflow here</a>.</li>
 <li>When changing css files, sometimes it is good to comment using text you know is not in other places.  In .css files to make a comment you start a comment with <code>/*</code> , and end it with <code>*/</code>  For example: <code>/* This text is a commented out */</code></li>
 </ul>
-<h2 id="part-2---hosting-on-github">Part 2 - Hosting on Github</h2>
-<p>This will take</p>
+<h2 id="part-2---hosting-on-github-in-progress">Part 2 - Hosting on Github (in progress)</h2>
+<p>There are several ways to achieve this and unfortutley, with Hugo, it is a bit complicated.  It is easier with another Static Website Generator <a href="https://jekyllrb.com/">Jekyll</a>, but building those websites is harder. You win some you lose some.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>configure your Github account onto your computer: <a href="https://help.github.com/en/enterprise/2.16/user/github/using-git/setting-your-username-in-git#setting-your-git-username-for-every-repository-on-your-computer">see here</a>. This just authenticates your computer to making changes under your Github id.</li>
+</ul>
+<h3 id="getting-started-with-git">Getting started with git</h3>
+<p>Let&rsquo;s get started with some basic git commands. There are three stages to getting something onto Github. These are the main commands for going through those stages:</p>
+<ol>
+<li>Tracking:  <code>git add .</code></li>
+<li>Commiting <code>git commit -m &quot;message describing changes&quot;</code></li>
+<li>Pushing  <code>git push origin master</code></li>
+</ol>
+<p>Then, there are a few more commands that are useful</p>
+<ul>
+<li><code>git status</code> - tells you what files are being tracked (what will be commited at that point in time)</li>
+</ul>
 
         </p>
     </div>

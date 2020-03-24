@@ -1,0 +1,191 @@
+---
+title: "Intro to CZI files Part 1"
+date: 2020-03-22T09:54:08-07:00
+draft: false
+author: Jenna
+---
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<!-- Custom stylesheet, it must be in the same directory as the html file -->
+<link rel="stylesheet" href="custom.css">
+
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+
+    </script>
+    <!-- End of mathjax configuration --></head>
+<body>
+  <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1>Dependencies<a class="anchor-link" href="#200322---Dependencies-for-Intro-to-working-with-CZI-files-for-image-analysis"></a></h1><p>Before we get into image analysis we will have to go through the hellish process of installing shit. I personally hate this the most because all of this work is riddled with the anxiety that it is all for nothing because the program might not be right for what I am doing anyway. Here at least you can rest assured that all of this crap will definitely be useful for you in the future. There are only a few things that are even image analysis related (at the end) so nearly everything I talk about here will be useful for you at some point if you ever plan on using python.</p>
+<p>Another common fear I have when installing shit is that it might take up crazy amounts of space on my computer. Fear not! I don't have much room on my computer but I was able to install all of these things (and many more) with relatively little space bloating. Anaconda <em>is</em> 3Gb but it comes with so many other things that I use that it makes it worth it for me. And you probably won't have to install a bunch of other stuff too. But if you just want to dip your toes in the water you can try with miniconda.. or just uninstall anaconda when you are done.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Dependencies">Dependencies<a class="anchor-link" href="#Dependencies"></a>
+</h1>
+<p>
+<img alt="Qries" src="https://revolution-computing.typepad.com/.a/6a010534b1db25970b01bb0794c2fc970d-pi" width=600" ></p>
+
+<p><strong>General note:</strong> Everyone is going to go on their own journey with installs. Follow the directions for the specific packages. I am not super great at installs and find them super frustrating and time consuming. Marc and Ciera are really good at them and each have helped me through it, usually with us googling whatever the error was. I feel like every computer has weird permissions and shit that you have to figure out individually. If you plan on following along (which I would def recommend for max learning) try to get conda, jupyter, and the relevant packages installed before Tuesday! If you are planning on doing any sort of coding in python it's worth it.</p>
+<ul>
+<li><p><a href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html">python 3 via conda</a></p>
+<ul>
+<li><p>I made a specific environment for image analysis. to do this I used conda environment manager.</p>
+</li>
+<li><p><strong>Why should I use conda?</strong></p>
+<ul>
+<li>conda is good to start using because it means you can have several "versions" of packages and python installs at any given time. This means that if I need to  use an old version of Numpy for this one package (which happens constantly with poorly maintained scientific packages) I can make a new environment where I do that and it won't break all of my other stuff.</li>
+<li>Also means that if you still do stuff in python 2 you can make a python 3 environment where you do this tutorial and image analysis without breaking any preexisting stuff you already have going....it's very useful and definitely worth getting up and running. I don't know how I would do any analysis without it.</li>
+</ul>
+</li>
+<li><p><strong>Anaconda vs miniconda</strong></p>
+<ul>
+<li>Miniconda is just the environment manager and maybe python? It doesn't come with any other packages installed. I didn't install miniconda (I did anaconda) so I have no idea what those packages will be and it might result in <a href="https://www.google.com/search?q=dependency+hell&amp;source=lmns&amp;hl=en&amp;ved=2ahUKEwjZq9bB8K7oAhVrh54KHScyCgsQ_AUoAHoECAEQAA">dependency hell</a>. if you don't want to install a lot of packages but you might have to install more individually as you go or anaconda if you have space and are not about installing shit (Me)</li>
+<li>Anaconda has jupyter already installed so you won't have to worry about that. </li>
+<li><p>Choose Anaconda if you:</p>
+<ul>
+<li>Are new to conda or Python</li>
+<li>Like the convenience of having Python and over 150 scientific packages automatically installed at once</li>
+<li>Have the time and disk space (a few minutes and 3 GB), and/or</li>
+<li>Don’t want to install each of the packages you want to use individually.</li>
+</ul>
+</li>
+<li><p>Choose Miniconda if you:</p>
+<ul>
+<li>Do not mind installing each of the packages you want to use individually.</li>
+<li>Do not have time or disk space to install over 150 packages at once (~3Gb I think?), and/or</li>
+<li>Just want fast access to Python and the conda commands, and wish to sort out the other programs later</li>
+</ul>
+</li>
+<li><a href="https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/download.html#anaconda-or-miniconda">More info</a></li>
+</ul>
+</li>
+<li><strong>Working with Conda</strong><ul>
+<li>Once you have conda up and running play around with setting up new environments and installing packages. All the commands are through the terminal. </li>
+<li><a href="https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf">Conda command cheat sheet</a></li>
+<li>Tip: Always try to install new packages through conda first before using PIP (if you did miniconda you might have to download or update pip). Conda will always put that install in the right directory for the environment you are in - PIP does not .. sometimes it puts it in your root python bin which (at least for me) was not related to my conda bins and it was very frustrating. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://jupyter.org/">Jupyter</a></p>
+<ul>
+<li>if you installed Anaconda - GOOD JOB YOU'RE DONE!! Launch jupyter notebook by typing- jupyter notebook - into the terminal and BAM you got a jupyter notebook! </li>
+<li>if you installed miniconda I think all you have to do is : conda install jupyter</li>
+<li>you can install with PIP which I have done before.. I then had to uninstall it later because it wasn't syncing with any of my environments and I wasted a whole day uninstalling and reinstalling python .. not fun...</li>
+<li>(more info)[<a href="https://jupyter.readthedocs.io/en/latest/install.html">https://jupyter.readthedocs.io/en/latest/install.html</a>]</li>
+</ul>
+</li>
+<li><p>Test it out!</p>
+<ul>
+<li><p>once you have installed conda + Jupyter all you need to do is:</p>
+<ol>
+<li><p>Open terminal</p>
+</li>
+<li><p>Type 'source activate <em>nameofyourenvironmenthere</em>'</p>
+</li>
+<li><p>go to whatever directory you want your notebooks to be stored in</p>
+</li>
+<li><p>type 'jupyter notebook' to open up a directory in your browser where you can launch a new notebook by clicking new or you can type 'jupyter notebook <em>pathtonotebook</em></p>
+</li>
+</ol>
+<p><strong> you can also open notebooks in visual studio code now which I have started doing when I just need to check one quickly</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Czi-file/-Image-analysis-specific-dependencies--">Czi file/ Image analysis specific dependencies -<a class="anchor-link" href="#Czi-file/-Image-analysis-specific-dependencies--">&#182;</a></h2><ul>
+<li>You need the <a href="https://pypi.org/project/czifile/">Czifile python package</a> to import CZI files into python. <ul>
+<li>welcome to dependecy hell. In order to install this package you need the following:<ul>
+<li>CPython 2.7 or 3.5+ </li>
+<li>Numpy 1.14</li>
+<li>Tifffile 2019.7.2</li>
+<li>Imagecodecs 2019.5.22 (optional; used for decoding LZW, JPEG, and JPEG XR) &lt;-- i never did this one.. I get an annoying warning every time that I just ignore</li>
+<li>I think I needed to install or update xcode for some of them..</li>
+</ul>
+</li>
+<li>install as many as possible with conda but I think the final Czifile install will be with pip. Getting pip to play nice with conda is challenging but try it out! to test to see if it worked launch python in the terminal by just typing python then type 'import czifile'<ul>
+<li>Directions from Ciera<ul>
+<li><code>pip install imagecodecs==2018.10.28</code></li>
+<li>Download package <a href="https://pypi.org/project/czifile/#files">czifile.py</a></li>
+<li>Then pip install on zipped package: `pip install ~/Downloads/czifile-2018.10.18.tar.gz</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="other-packages-that-are-useful-to-have">other packages that are useful to have<a class="anchor-link" href="#other-packages-that-are-useful-to-have"></a></h1><p><strong> Disclaimer</strong> many of these packages come with anaconda and so I have never used the links I provided to install it. I just put those there for reference. Don't @ me bro.</p>
+
+<p>Many of these packages will already be installed with anaconda. Check to see if you have them by going into your python 3 conda environment (source activate *condaenvname*) typing in python, and then import *packageName*
+- before installing make sure you are in the right conda environment </p>
+<ul>
+<li><strong>scipy's ndimage package for multi dimensional image processing</strong><ul>
+<li>i don't know if this comes pre-downloaded with anaconda but if you don't have it install it with conda </li>
+<li>if not : conda install -c anaconda scipy <a href="https://anaconda.org/anaconda/scipy">source page</a></li>
+</ul>
+</li>
+<li><strong><a href="https://scikit-image.org/">sci-kit image or skimage</a> for image processing in python</strong><ul>
+<li>conda install -c conda-forge scikit-image <a href="https://scikit-image.org/docs/dev/install.html">source page</a></li>
+</ul>
+</li>
+<li><strong>matplotlib</strong> - making graphs and stuff. I hate it but also that is how you output images in jupyter notebooks which is very essential to seeing what you are doing. <ul>
+<li>comes with anaconda</li>
+<li>should have already been installed with jupyter?</li>
+<li>more info - <a href="https://anaconda.org/conda-forge/matplotlib">https://anaconda.org/conda-forge/matplotlib</a></li>
+</ul>
+</li>
+</ul>
+<p><strong> I use the following a lot but they are probably already installed with python</strong></p>
+<ul>
+<li>xml.etree - I think this comes with python too. </li>
+<li>os - allows to interact with the operating system. This is probably included in the conda install</li>
+<li>math - also to perform basic math functions. probably included something you installed already </li>
+</ul>
+
+
+</body>
+</html>

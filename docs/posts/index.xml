@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Intro to CZI files</title>
-      <link>https://meisenlab.github.io/coding_site/posts/czi_intro/</link>
+      <title>Intro to CZI files Part 1</title>
+      <link>https://meisenlab.github.io/coding_site/posts/czi_intro_part1/</link>
       <pubDate>Sun, 22 Mar 2020 09:54:08 -0700</pubDate>
       
-      <guid>https://meisenlab.github.io/coding_site/posts/czi_intro/</guid>
-      <description>Dependencies for Intro to working with CZI files for image analysisBefore we get into image analysis we will have to go through the hellish process of installing shit.</description>
+      <guid>https://meisenlab.github.io/coding_site/posts/czi_intro_part1/</guid>
+      <description>DependenciesBefore we get into image analysis we will have to go through the hellish process of installing shit.</description>
     </item>
     
     <item>
@@ -27,6 +27,15 @@
       
       <guid>https://meisenlab.github.io/coding_site/posts/building_website/</guid>
       <description>There are three main reasons I would like to start this series with a website tutorial.</description>
+    </item>
+    
+    <item>
+      <title>Intro to CZI files Part 2</title>
+      <link>https://meisenlab.github.io/coding_site/posts/czi_intro_part2/</link>
+      <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/czi_intro_part2/</guid>
+      <description>200323-CziFile_importing   /*! * * Twitter Bootstrap * */ /*!</description>
     </item>
     
     <item>

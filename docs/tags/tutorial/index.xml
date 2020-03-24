@@ -20,5 +20,14 @@
       <description>There are three main reasons I would like to start this series with a website tutorial.</description>
     </item>
     
+    <item>
+      <title>Intro to CZI files Part 2</title>
+      <link>https://meisenlab.github.io/coding_site/posts/czi_intro_part2/</link>
+      <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/czi_intro_part2/</guid>
+      <description>200323-CziFile_importing   /*! * * Twitter Bootstrap * */ /*!</description>
+    </item>
+    
   </channel>
 </rss>

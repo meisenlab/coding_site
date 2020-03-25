@@ -5,6 +5,8 @@ draft: false
 tags: ["website", "tutorial"] 
 ---
 
+This tutorial acts as a guide for creating static websites with Hugo.
+
 There are three main reasons I would like to start this series with a website tutorial. 1. A website allows you to communicate to world the easiest - especially communicating your work through your own personal website 2. If you host your website on Github, this is an excellent way to learn how to use Git. 3. Understanding how to use git and being able to build a website allows you to collaboratively build content. We can build anything together!
 
 

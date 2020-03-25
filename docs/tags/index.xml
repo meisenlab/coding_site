@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Eisen Lab Coding Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2020 09:54:08 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 09:54:08 -0700</lastBuildDate>
     
 	<atom:link href="https://meisenlab.github.io/coding_site/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://meisenlab.github.io/coding_site/tags/tutorial/</link>
+      <pubDate>Sun, 22 Mar 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/tags/tutorial/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>about</title>
@@ -26,15 +35,6 @@
       <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
       
       <guid>https://meisenlab.github.io/coding_site/tags/brainstorming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>https://meisenlab.github.io/coding_site/tags/tutorial/</link>
-      <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
-      
-      <guid>https://meisenlab.github.io/coding_site/tags/tutorial/</guid>
       <description></description>
     </item>
     

@@ -4,11 +4,12 @@ title = "Eisen Lab Coding Club"
 theme = "noteworthy"
 tags = ["brainstorming", "about"] 
 publishDir = "docs"
-
-summaryLength = 7 # Configure how long the post summary should be on the homepage.
+paginate = 6 # Set the number of posts to show before overflowing to the next page.
+summaryLength = 1 # Configure how long the post summary should be on the homepage.
 
 [params]
 	math = true
+	
 	# Blog description at the top of the homepage
 	description = "Sharing coding knowledge for quarantine times"
 

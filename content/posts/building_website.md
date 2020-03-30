@@ -76,7 +76,7 @@ Let's get started with some basic git commands. There are three stages to gettin
 
 Then, there are a few more commands that are useful
 
-- `git status` - (*)*This is the most useful**) tells you what files are being tracked (what will be commited at that point in time)
+- `git status` - (**This is the most useful**) tells you what files are being tracked (what will be commited at that point in time)
 - `git log` - shows you a list of all commits
 - `git remote -v` - shows you what remote repos your local repo is attached.
 
@@ -85,7 +85,6 @@ Then, there are a few more commands that are useful
 ### Make our first commit and push
 
 Now go ahead and do the above. Check you can see all your code on Github.
-
 
 ### Host your website
 
@@ -102,6 +101,15 @@ From Source, select “master branch /docs folder”. If the option isn’t enab
 8. Check that URL (`http://yourusername.github.io/yourreponame/`) on any browser.  *Warning* it may take up to 3 minutes before you see it or any changes that you make. 
 
 That *should* work, but likely didn't.  If no, don't fret, we will figure it out! 
+
+### Making changes to your website
+
+Now everything is all set up for your website, so you have to do minimal work to update your site! Just follow the three steps below.
+
+1. Make change to your file on your local computer
+2. Build your website: `hugo -D`
+3. Git add, commit, push
+
 
 
 

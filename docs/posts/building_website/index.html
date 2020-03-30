@@ -195,8 +195,27 @@
 </ol>
 <p>Then, there are a few more commands that are useful</p>
 <ul>
-<li><code>git status</code> - tells you what files are being tracked (what will be commited at that point in time)</li>
+<li><code>git status</code> - (*)<em>This is the most useful</em>*) tells you what files are being tracked (what will be commited at that point in time)</li>
+<li><code>git log</code> - shows you a list of all commits</li>
+<li><code>git remote -v</code> - shows you what remote repos your local repo is attached.</li>
 </ul>
+<p><img src="http://cierareports.org/downloads/gitCheatSheetGitHub_ForkEasy.png" alt="alt text" title="Logo Title Text 1"></p>
+<h3 id="make-our-first-commit-and-push">Make our first commit and push</h3>
+<p>Now go ahead and do the above. Check you can see all your code on Github.</p>
+<h3 id="host-your-website">Host your website</h3>
+<p>Now comes the time to host your website. There are many ways to do this, but I am going to start with the most simple way. I basically am just following <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-docs-folder-on-master-branch">this tutorial</a>.</p>
+<ol>
+<li>Change our config.toml file to read: <code>publishDir = &quot;docs&quot;</code></li>
+<li>Run <code>hugo -D</code>.  This should build your entire website into the <code>/docs</code> folder.</li>
+<li>Push your master branch to the remote repository: <code>git push origin master</code></li>
+<li>On the Github website, choose the docs/ folder as the website source of your repo. Do the following from within your GitHub project: Go to <code>Settings → GitHub Pages</code>
+From Source, select “master branch /docs folder”. If the option isn’t enabled, you likely do not have a docs/ folder in the root of your project.</li>
+<li>You now should have a message saying &ldquo;Your site is published at <code>http://yourusername.github.io/yourreponame/</code></li>
+<li>Copy that site name and enter it into your <code>config.toml</code> file as <code>baseURL = &quot;http://yourusername.github.io/yourreponame/</code></li>
+<li>Then go through the three commands for getting something on Github (add, commit, push).</li>
+<li>Check that URL (<code>http://yourusername.github.io/yourreponame/</code>) on any browser.  <em>Warning</em> it may take up to 3 minutes before you see it or any changes that you make.</li>
+</ol>
+<p>That <em>should</em> work, but likely didn&rsquo;t.  If no, don&rsquo;t fret, we will figure it out!</p>
 
         </p>
     </div>

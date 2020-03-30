@@ -56,7 +56,6 @@ We will be making a static website with a static website generator called Hugo. 
 - When changing css files, sometimes it is good to comment using text you know is not in other places.  In .css files to make a comment you start a comment with `/*` , and end it with `*/`  For example: `/* This text is a commented out */` 
 
 
-
 ## Part 2 - Hosting on Github (in progress)
 
 There are several ways to achieve this and unfortutley, with Hugo, it is a bit complicated.  It is easier with another Static Website Generator [Jekyll](https://jekyllrb.com/), but building those websites is harder. You win some you lose some. 
@@ -69,12 +68,46 @@ There are several ways to achieve this and unfortutley, with Hugo, it is a bit c
 
 Let's get started with some basic git commands. There are three stages to getting something onto Github. These are the main commands for going through those stages:
 
-1. Tracking:  `git add .` 
-2. Commiting `git commit -m "message describing changes"`
+1. Tracking:  `git add .`
+2. Commiting `git commit -m "message describing changes"` 
 3. Pushing  `git push origin master`
+
+
 
 Then, there are a few more commands that are useful
 
-- `git status` - tells you what files are being tracked (what will be commited at that point in time)
+- `git status` - (*)*This is the most useful**) tells you what files are being tracked (what will be commited at that point in time)
+- `git log` - shows you a list of all commits
+- `git remote -v` - shows you what remote repos your local repo is attached.
+
+![alt text](http://cierareports.org/downloads/gitCheatSheetGitHub_ForkEasy.png "Logo Title Text 1")
+
+### Make our first commit and push
+
+Now go ahead and do the above. Check you can see all your code on Github.
+
+
+### Host your website
+
+Now comes the time to host your website. There are many ways to do this, but I am going to start with the most simple way. I basically am just following [this tutorial](https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-docs-folder-on-master-branch).
+
+1. Change our config.toml file to read: `publishDir = "docs"`
+2. Run `hugo -D`.  This should build your entire website into the `/docs` folder. 
+3. Push your master branch to the remote repository: `git push origin master`
+4. On the Github website, choose the docs/ folder as the website source of your repo. Do the following from within your GitHub project: Go to `Settings → GitHub Pages`
+From Source, select “master branch /docs folder”. If the option isn’t enabled, you likely do not have a docs/ folder in the root of your project.
+5. You now should have a message saying "Your site is published at `http://yourusername.github.io/yourreponame/`
+6. Copy that site name and enter it into your `config.toml` file as `baseURL = "http://yourusername.github.io/yourreponame/`
+7. Then go through the three commands for getting something on Github (add, commit, push). 
+8. Check that URL (`http://yourusername.github.io/yourreponame/`) on any browser.  *Warning* it may take up to 3 minutes before you see it or any changes that you make. 
+
+That *should* work, but likely didn't.  If no, don't fret, we will figure it out! 
+
+
+
+
+
+
+
 
 

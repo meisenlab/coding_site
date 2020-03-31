@@ -6,10 +6,19 @@
     <description>Recent content in tutorial on Eisen Lab Coding Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2020 09:54:08 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 09:54:08 -0700</lastBuildDate>
     
 	<atom:link href="https://meisenlab.github.io/coding_site/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Plotting with matplotlib</title>
+      <link>https://meisenlab.github.io/coding_site/posts/matplotlib/</link>
+      <pubDate>Tue, 31 Mar 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/matplotlib/</guid>
+      <description>We all explore matplotlib together!</description>
+    </item>
     
     <item>
       <title>Intro to CZI files Part 2</title>

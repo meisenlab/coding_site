@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://meisenlab.github.io/coding_site/tags/ciera/</loc>
+    <lastmod>2020-03-31T09:54:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meisenlab.github.io/coding_site/posts/matplotlib_colors/</loc>
+    <lastmod>2020-03-31T09:54:08-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://meisenlab.github.io/coding_site/</loc>
     <lastmod>2020-03-31T09:54:08-07:00</lastmod>
   </url>

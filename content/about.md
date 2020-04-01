@@ -17,11 +17,15 @@ Zoom: [link](https://berkeley.zoom.us/j/6286606816)
 
 | ﻿Date               | Time    | Lead  | Title                                   |
 |--------------------|---------|-------|-----------------------------------------|
-| Monday, March 23   | 11:00am | Ciera | Making github hosted website Part 1     |
-| Tuesday, March 24  | 12:00pm | Jenna | Introduction to .czi files Part 1 and 2 |
-| Thursday, March 26 | 11:00am | Jenna | Introduction to .czi files Part 1       |
+| Tuesday, April 7   | 11:00am | Marc  | Intro to Image Analysis                 |
+| Thursday, April 2 | 11:00am  | Ciera | Intro to Matplot lib                    |
+| Tuesday, March 31  | 12:00pm | Stadler | Introduction to .czi files Part 2     |
 | Monday, March 30   | 11:00am | Ciera | Making github hosted website Part 2     |
-| Tuesday, March 31  | 12:00am | Jenna | Introduction to .czi files Part 2       |
+| Thursday, March 26 | 11:00am | Jenna | Introduction to .czi files Part 1       |
+| Tuesday, March 24  | 12:00pm | Jenna | Introduction to .czi files Part 1 and 2 |
+| Monday, March 23   | 11:00am | Ciera | Making github hosted website Part 1     |
+
+
 
 ## Framework
 

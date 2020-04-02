@@ -20,5 +20,14 @@
       <description>Exploring color in mapplotlib!</description>
     </item>
     
+    <item>
+      <title>Building a Hugo Website</title>
+      <link>https://meisenlab.github.io/coding_site/posts/building_website/</link>
+      <pubDate>Fri, 20 Mar 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/building_website/</guid>
+      <description>This tutorial acts as a guide for creating static websites with Hugo.</description>
+    </item>
+    
   </channel>
 </rss>

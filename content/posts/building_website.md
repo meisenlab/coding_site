@@ -2,7 +2,7 @@
 title: "Building a Hugo Website"
 date: 2020-03-20T09:54:08-07:00
 draft: false
-tags: ["website", "tutorial"] 
+tags: ["website", "tutorial", "ciera"] 
 ---
 
 This tutorial acts as a guide for creating static websites with Hugo.

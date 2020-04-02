@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Intro to CZI files Part 1</title>
+      <link>https://meisenlab.github.io/coding_site/posts/czi_intro_part1/</link>
+      <pubDate>Sun, 22 Mar 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/czi_intro_part1/</guid>
+      <description>This post explores how to set up your enviroment for doing confocal image analyis in Python.</description>
+    </item>
+    
+    <item>
       <title>Intro to CZI files Part 2</title>
       <link>https://meisenlab.github.io/coding_site/posts/czi_intro_part2/</link>
       <pubDate>Sun, 22 Mar 2020 09:54:08 -0700</pubDate>

@@ -1,0 +1,209 @@
+---
+title: "Image Analysis 1: Slicing, Filters and Sliders 1"
+date: 2020-04-07T09:54:08-07:00
+draft: false
+tags: ["czi", "image analysis", tutorial", "marc"] 
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 17.0px; font: 14.0px Courier; color: #242b8d; -webkit-text-stroke: #242b8d; min-height: 17.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 14.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 14.0px Courier; color: #000000; -webkit-text-stroke: #000000; background-color: #ebeced}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 14.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 17.0px; font: 14.0px Courier; color: #242b8d; -webkit-text-stroke: #242b8d}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Courier; color: #0000ff; -webkit-text-stroke: #0000ff; background-color: #f5f5f5}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Courier; color: #0f7001; -webkit-text-stroke: #0f7001; background-color: #f5f5f5}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Courier; color: #262626; -webkit-text-stroke: #262626; background-color: #f5f5f5; min-height: 17.0px}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Courier; color: #262626; -webkit-text-stroke: #262626; background-color: #f5f5f5}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 17.0px; font: 14.0px Courier; color: #cc2e12; -webkit-text-stroke: #cc2e12}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 17.0px; font: 14.0px Courier; color: #336e6d; -webkit-text-stroke: #336e6d; background-color: #f5f5f5}
+    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 17.0px; font: 14.0px Courier; color: #000000; -webkit-text-stroke: #000000; min-height: 17.0px}
+    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 14.0px 'Helvetica Neue'; color: #2965a8; -webkit-text-stroke: #2965a8}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; background-color: #ffffff}
+    span.s3 {font-kerning: none; color: #2965a8; background-color: #ffffff; -webkit-text-stroke: 0px #2965a8}
+    span.s4 {background-color: #ffffff; -webkit-text-stroke: 0px #000000}
+    span.s5 {text-decoration: underline ; font-kerning: none}
+    span.s6 {font-kerning: none; background-color: #ebeced}
+    span.s7 {font-kerning: none; color: #0f7001; -webkit-text-stroke: 0px #0f7001}
+    span.s8 {font-kerning: none; color: #262626; -webkit-text-stroke: 0px #262626}
+    span.s9 {font-kerning: none; color: #0000ff; -webkit-text-stroke: 0px #0000ff}
+    span.s10 {font-kerning: none; color: #535353; -webkit-text-stroke: 0px #535353}
+    span.s11 {font-kerning: none; color: #a90e1a; -webkit-text-stroke: 0px #a90e1a}
+    span.s12 {font: 14.0px Courier; font-kerning: none; background-color: #ebeced}
+    span.s13 {font: 14.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: #2965a8; -webkit-text-stroke: 0px #2965a8}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"></span><br></p>
+<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 25.0px; font: 26.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Image Analysis 1: Slicing, Filters and Sliders</b></span><span class="s3"><b>¶</b></span></h1>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Introduction</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">So far we've had two sessions on image analysis in Python. In the first, we installed all the necessary packages and ensured they were all playing nicely with each other (no small task!). In the second, we got our toes wet with opening CZI files and examining their properties and contents via the console as well as with some some simple plotting functions. Hopefully in this session, I'll refresh your memory on all these points and build on them by introducing filters as well as some additional ways of viewing image data with matplotlib.</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Getting Organized</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">First download the following files into whatever working folder you have for this notebook. You can of course put them anywhere, but I find having the files you're using in your working folder makes coding 10x easier, especially when using interactive interfaces like Jupyter notebooks. (The fewer times I have to stretch my pinky to the backslash key, the better!)</span></p>
+<ul class="ul1">
+  <li class="li5"><span class="s4"><a href="https://drive.google.com/a/berkeley.edu/file/d/1q3Qtw52yqMin6SZROiJlDKRc6AJysg_I/view?usp=sharing"><span class="s5">https://drive.google.com/a/berkeley.edu/file/d/1q3Qtw52yqMin6SZROiJlDKRc6AJysg_I/view?usp=sharing</span></a></span></li>
+  <li class="li5"><span class="s4"><a href="https://drive.google.com/a/berkeley.edu/file/d/1FWRW0hvfoVQP79n_-acttPUROEFcHjEg/view?usp=sharing"><span class="s5">https://drive.google.com/a/berkeley.edu/file/d/1FWRW0hvfoVQP79n_-acttPUROEFcHjEg/view?usp=sharing</span></a></span></li>
+  <li class="li5"><span class="s4"><a href="https://drive.google.com/a/berkeley.edu/file/d/1b75aL3-DyvqsaWYwzTgOre-LSRSipcyW/view?usp=sharing"><span class="s5">https://drive.google.com/a/berkeley.edu/file/d/1b75aL3-DyvqsaWYwzTgOre-LSRSipcyW/view?usp=sharing</span></a></span></li>
+</ul>
+<p class="p4"><span class="s2">The first file is a confocal movie of a developing embryo from my first project in the Eisen lab. I chose it since as a movie of z-stacks with multiple channels, it has a lot of dimensions for us to play around with and get comfortable with slicing high dimensional arrays. (Technically, in numpy jargon each dimension in an array, for example the y-coordinate of an image, is called an axis. The unfortunate overlap with matplotlib jargon is just a burden we have to bear.)</span></p>
+<p class="p4"><span class="s2">The second ("stax.py") is a module of "helper functions." (A module is just Python jargon for a file of Python code, but it usually has the implication that whatever code inside it is general purpose enough to be re-used.) Since many image processing functions in scipy and sklearn don't directly operate on multidimensional images, I wrote some functions to streamline my code and avoid the need for writing loops all over the place. We won't actually use it today, but I figured I would introduce it.</span></p>
+<p class="p4"><span class="s2">The third ("vu.py") is also a module of "helper functions," but instead focuses on visualizing multidimensional arrays. Some functions are definitely specific to my own analyses, but there are also some very useful functions that output movies or interactive windows for scrolling through different slices of an array.</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Starting your session</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">First open a terminal window, navigate to your working folder, and start a Python session. Feel free to substitute whatever Jupyter commands necessary.</span></p>
+<p class="p6"><span class="s1">cd ur_werking_dir</span></p>
+<p class="p7"><span class="s6">python</span></p>
+<p class="p4"><span class="s2">I should note that at least for vanilla Python installations, and I'm sure it's also true of Jupyter as well, it's <b>very important</b> in this case to start your session of Python in whatever folder contains the module of helper functions. Python imports modules much like your shell finds commands, that is, it has a PATH variable (separate but related to your system PATH!) that it searches for matching modules. Typically, Python adds whatever folder it was started from to its PATH. If all of this went over your head, don't worry about. Just start Python from the folder that has stax.py and vu.py.</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Importing modules and loading the CZI</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">Let's first import all the modules we'll be using today and load the CZI file.</span></p>
+<p class="p8"><span class="s2">In [22]:</span></p>
+<p class="p9"><span class="s7"><b>import</b></span><span class="s8"> </span><span class="s1"><b>czifile</b></span></p>
+<p class="p9"><span class="s7"><b>import</b></span><span class="s8"> </span><span class="s1"><b>matplotlib.pyplot</b></span><span class="s8"> </span><span class="s7"><b>as</b></span><span class="s8"> </span><span class="s1"><b>plt</b></span></p>
+<p class="p10"><span class="s1"><b>import</b></span><span class="s8"> </span><span class="s9"><b>numpy</b></span><span class="s8"> </span><span class="s1"><b>as</b></span><span class="s8"> </span><span class="s9"><b>np</b></span></p>
+<p class="p9"><span class="s7"><b>import</b></span><span class="s8"> </span><span class="s1"><b>skimage.filters</b></span><span class="s8"> </span><span class="s7"><b>as</b></span><span class="s8"> </span><span class="s1"><b>filters</b></span></p>
+<p class="p10"><span class="s1"><b>import</b></span><span class="s8"> </span><span class="s9"><b>stax</b></span></p>
+<p class="p10"><span class="s1"><b>import</b></span><span class="s8"> </span><span class="s9"><b>vu</b></span></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1">tchzstack </span><span class="s10">=</span><span class="s1"> czifile</span><span class="s10">.</span><span class="s1">imread(</span><span class="s11">'180817_dev1.czi'</span><span class="s1">)</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">I call ndarrays (n-dimensional arrays) of images "stacks" generically. In this case, I'm adding "tchz" to remind myself of the identity of each axis. But let's say you don't know that ahead of time. How can you find out? I usually find the most useful first step for parsing a new CZI file is looking at the sizes of the axes. These are accessed with the stack's "shape" attribute.</span></p>
+<p class="p8"><span class="s2">In [23]:</span></p>
+<p class="p12"><span class="s1">tchzstack</span><span class="s10">.</span><span class="s1">shape</span></p>
+<p class="p13"><span class="s2">Out[23]:</span></p>
+<p class="p14"><span class="s2">(1, 1, 57, 2, 15, 256, 512, 1)</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">We can see this stack contains eight axes. Starting from the third position, the axes are time, channel, z, y, and x, respectively. I know this because I'm familiar with my imaging parameters, so hopefully you can do the same when you have CZI files of your own.</span></p>
+<p class="p4"><span class="s2">This only accounts for five of the eight axes, however. What are the other three? The truth is I'm not entirely sure, but I suspect they correspond to other aspects of the CZI specification which are not used in this file, for example different regions in a tiled image. Maybe someone will collect some crazy confocal data one day and figure it out.</span></p>
+<p class="p4"><span class="s2">Anyway, those extra axes are kind of annoying since they don't store any additional information. (It's kind of like if you were graphing points on an xy plane, and for every ordered pair I told you, "Oh, by the way, z = 0.") We can use the squeeze method of an ndarray to get rid of those spare axes.</span></p>
+<p class="p8"><span class="s2">In [24]:</span></p>
+<p class="p15"><span class="s8">tchzstack </span><span class="s10">=</span><span class="s8"> tchzstack</span><span class="s10">.</span><span class="s8">squeeze()<span class="Apple-converted-space">  </span></span><span class="s1"><i># We'll re-assign the squeezed stack to its original name to keep things simple</i></span></p>
+<p class="p12"><span class="s1">tchzstack</span><span class="s10">.</span><span class="s1">shape</span></p>
+<p class="p13"><span class="s2">Out[24]:</span></p>
+<p class="p14"><span class="s2">(57, 2, 15, 256, 512)</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">Much better.</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Slicing stacks</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">So what do the images in this stack actually look like? We can use a function from matplotlib to show us, but first we need to extract a single image from the stack using numpy's handy slicing notation. To grab 4th image in a stack from the 1st channel, at the 21st time point we use:</span></p>
+<p class="p8"><span class="s2">In [25]:</span></p>
+<p class="p15"><span class="s8">image </span><span class="s10">=</span><span class="s8"> tchzstack[</span><span class="s10">20</span><span class="s8">, </span><span class="s10">0</span><span class="s8">, </span><span class="s10">3</span><span class="s8">]<span class="Apple-converted-space">  </span></span><span class="s1"><i># Remember that Python indexing starts from 0</i></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">Using this syntax, we haven't specified the ranges for the last two axes, so numpy gives us everything. This is the entire image, which is what we want. However, there are a few different ways of slicing an ndarray, depending on how much we want to type. Before getting into the weeds of numpy slicing, though, let's take a look at what this image actually is.</span></p>
+<p class="p8"><span class="s2">In [26]:</span></p>
+<p class="p10"><span class="s10">%</span><span class="s1"><b>matplotlib</b></span><span class="s8"> inline</span></p>
+<p class="p15"><span class="s8">plt</span><span class="s10">.</span><span class="s8">imshow(image);<span class="Apple-converted-space">  </span></span><span class="s1"><i># We use a semi-colon to suppress the notebook from printing some extraneous output</i></span></p>
+<p class="p16"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><img src="file:///unknown.png" alt="unknown.png"></span><span class="s2"><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">It's an embryo, as promised. The first channel corresponds to histone-RFP, which is why the nuclei are so bright. Feel free to play around with the slicing indices to get display different images.</span></p>
+<p class="p4"><span class="s2">As mentioned, there are a few ways of slicing ndarrays. For example the following are equivalent to the previous slice.</span></p>
+<p class="p8"><span class="s2">In [27]:</span></p>
+<p class="p15"><span class="s8">image </span><span class="s10">=</span><span class="s8"> tchzstack[</span><span class="s10">20</span><span class="s8">, </span><span class="s10">0</span><span class="s8">, </span><span class="s10">3</span><span class="s8">, </span><span class="s10">...</span><span class="s8">]<span class="Apple-converted-space">  </span></span><span class="s1"><i># More specific; ellipses indicate take every entry in the remaining axes</i></span></p>
+<p class="p15"><span class="s8">image </span><span class="s10">=</span><span class="s8"> tchzstack[</span><span class="s10">20</span><span class="s8">, </span><span class="s10">0</span><span class="s8">, </span><span class="s10">3</span><span class="s8">, :, :]<span class="Apple-converted-space">  </span></span><span class="s1"><i># Most specific; colons indicate take every entry in that axis</i></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">We can also choose to specify ranges within axes using normal Python slicing notation. Below I'm selecting the region between 101 to 150 along the y-axis and 201 to 300 along the x-axis.</span></p>
+<p class="p8"><span class="s2">In [28]:</span></p>
+<p class="p12"><span class="s1">image </span><span class="s10">=</span><span class="s1"> tchzstack[</span><span class="s10">20</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">3</span><span class="s1">, </span><span class="s10">100</span><span class="s1">:</span><span class="s10">150</span><span class="s1">, </span><span class="s10">200</span><span class="s1">:</span><span class="s10">300</span><span class="s1">]</span></p>
+<p class="p12"><span class="s1">plt</span><span class="s10">.</span><span class="s1">imshow(image);</span></p>
+<p class="p16"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><img src="file:///unknown_1.png" alt="unknown_1.png"></span><span class="s2"><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">We can combine these notations in all kinds of crazy ways. For example, numpy is clever and will interpret the ellipses as applying to the remaining axes, even when they're between explicit ranges. The following extracts the region between 101&lt;=y&lt;=150 and 201&lt;=x&lt;=300 for each channel and each z-slice at the 21st time point.</span></p>
+<p class="p8"><span class="s2">In [29]:</span></p>
+<p class="p12"><span class="s1">image </span><span class="s10">=</span><span class="s1"> tchzstack[</span><span class="s10">20</span><span class="s1">, </span><span class="s10">...</span><span class="s1">, </span><span class="s10">100</span><span class="s1">:</span><span class="s10">150</span><span class="s1">, </span><span class="s10">200</span><span class="s1">:</span><span class="s10">300</span><span class="s1">]</span></p>
+<p class="p12"><span class="s1">image</span><span class="s10">.</span><span class="s1">shape</span></p>
+<p class="p13"><span class="s2">Out[29]:</span></p>
+<p class="p14"><span class="s2">(2, 15, 50, 100)</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">As expected, we have both channels and all z-slices. Numpy removed the time axis for us, though, since it only had a single entry after slicing.</span></p>
+<p class="p4"><span class="s2">We can even extract a single pixel.</span></p>
+<p class="p8"><span class="s2">In [30]:</span></p>
+<p class="p12"><span class="s1">image </span><span class="s10">=</span><span class="s1"> tchzstack[</span><span class="s10">20</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">3</span><span class="s1">, </span><span class="s10">150</span><span class="s1">, </span><span class="s10">200</span><span class="s1">]</span></p>
+<p class="p12"><span class="s1">image</span></p>
+<p class="p13"><span class="s2">Out[30]:</span></p>
+<p class="p14"><span class="s2">23</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">In this case our "image" is just a single number, in this case 23. That's all these image stacks really are, just organized collections of numbers. More specifically, in their raw form from the microscope they're either 8- or 16-bit unsigned integers, which in English is a whole number between 0 and 255 or 0 and 65,535, respectively. The details aren't all that important for what we're doing today, but the key takeaway is that most image analysis is just fancy arithmetic.</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Viewing stacks efficiently</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">Viewing single images at a time is nice, but what if I told you it was possible to slice a stack interactively without Fiji. Such is the magic of matplotlib's widgets.</span></p>
+<p class="p4"><span class="s2">...</span></p>
+<p class="p4"><span class="s2">They're actually not that magical and kind of finicky to set up, so one of the functions in the vu module does the hard work for us. It's creatively called </span><span class="s12">viewer</span><span class="s2">. Unfortunately, Jupyter notebooks don't render interactive figures, so we're also going to have to change the display settings.</span></p>
+<p class="p8"><span class="s2">In [31]:</span></p>
+<p class="p10"><span class="s10">%</span><span class="s1"><b>matplotlib</b></span><span class="s8"> qt</span></p>
+<p class="p15"><span class="s8">vu</span><span class="s10">.</span><span class="s8">viewer(tchzstack, (</span><span class="s11">'t'</span><span class="s8">, </span><span class="s11">'ch'</span><span class="s8">, </span><span class="s11">'z'</span><span class="s8">));<span class="Apple-converted-space">  </span></span><span class="s1"><i># Accepts labels for each axis; otherwise numbered</i></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">These sliders tend to freeze easily, so I recommend you don't actually "slide" your mouse across them, but instead click where you want to set them. Honestly, Jupyter has better built-in widgets, but the nice thing about these is you can use them outside of a notebook. (The real reason is I don't know how to use Jupyter widgets. I've toyed around with other GUI packages, like Qt, but I haven't had the time to fully explore it. If anyone's bored, a session on GUIs would be a great addition to our coding club series!)</span></p>
+<p class="p4"><span class="s2">The viewer function is flexible and can accept stacks of arbitrary dimensions. Let's see how it handles a normal z-stack.</span></p>
+<p class="p8"><span class="s2">In [32]:</span></p>
+<p class="p12"><span class="s1">zstack </span><span class="s10">=</span><span class="s1"> tchzstack[</span><span class="s10">20</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">...</span><span class="s1">]</span></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">viewer(zstack, </span><span class="s11">'z'</span><span class="s1">);</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">vu has a different function for viewing a stack as a movie. It only accepts "1stacks," however, that is stacks with only one axis in addition to x and y.</span></p>
+<p class="p8"><span class="s2">In [33]:</span></p>
+<p class="p15"><span class="s8">tstack </span><span class="s10">=</span><span class="s8"> tchzstack[:, </span><span class="s10">1</span><span class="s8">, </span><span class="s10">3</span><span class="s8">, </span><span class="s10">...</span><span class="s8">]<span class="Apple-converted-space">  </span></span><span class="s1"><i># 2nd channel, 4th z-slice, all time points</i></span></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">movie_1stack(tstack, refresh</span><span class="s10">=10</span><span class="s1">);</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">There is also a function for viewing a "2stack" as a movie. I intended this as a way to simultaneously view every slice of a z-stack over time, but due to inefficient use of space by the matplotlib layout engine, it falls somewhat short of that goal. Take a look.</span></p>
+<p class="p4"><span class="s2">(By the way, this function requires a "shape" parameter to set the number of rows and columns. In this case, it's 3x5 since there are 15 z-slices.)</span></p>
+<p class="p8"><span class="s2">In [34]:</span></p>
+<p class="p12"><span class="s1">tzstack </span><span class="s10">=</span><span class="s1"> tchzstack[:, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">...</span><span class="s1">]</span></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">movie_2stack(tchzstack[:, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">...</span><span class="s1">], (</span><span class="s10">3</span><span class="s1">, </span><span class="s10">5</span><span class="s1">));</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">I'm sure you're all wondering at this point how we can save these movies to use in presentations. That, unfortunately, is its own journey that I'll save for a future session.</span></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Filters</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">So now that we've seen what's in our stack, how do we actually start processing the images? That depends a lot on what you're doing, but here I'll try to introduce some basic operations that you can use to build more complex pipelines.</span></p>
+<p class="p4"><span class="s2">One common operation for reducing the complexity of a stack (at least for visualization purposes) is a max projection. We can do this with a single command!</span></p>
+<p class="p8"><span class="s2">In [35]:</span></p>
+<p class="p12"><span class="s1">maxz </span><span class="s10">=</span><span class="s1"> tchzstack</span><span class="s10">.</span><span class="s1">max(axis</span><span class="s10">=2</span><span class="s1">)</span></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">viewer(maxz, (</span><span class="s11">'t'</span><span class="s1">, </span><span class="s11">'ch'</span><span class="s1">))</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">We specify </span><span class="s12">axis=2</span><span class="s2"> to tell numpy to take the maximum only over the z-axis. Note we're not using the built-in </span><span class="s12">max</span><span class="s2"> function, but rather a method of the ndarray. If we try </span><span class="s12">max(tchzstack)</span><span class="s2">, we'll get an error since the built-in Python function lives in one-dimensional world and tries to compare slices, which makes numpy upset.</span></p>
+<p class="p4"><span class="s2">Max project is a little boring, so let's do something more interesting and apply a Gaussian filter. Gaussian filters are often the first step of image processing pipelines since by blurring the image, they remove noisy pixels which may trip up later steps. As a side note, manipulating an image as part of segmentation pipeline is entirely acceptable (unless of course you're specifically trying to bias your segmentation to achieve some downstream result). However once you've extracted the regions of interest from the image, you must use the raw data to calculate any statistics. There are almost certainly exceptions to this rule, but it stands as a general principle.</span></p>
+<p class="p4"><span class="s2">Before we use a Gaussian filter, let's talk about what a filter actually does. Filtering in image analysis is essentially of kind of local averaging. For every pixel in our image, we look around at some neighborhood around that pixel, and compute a new value for that pixel based on some kind of weighted average of all the surrounding pixels. In the simplest cases, the neighborhood is a square, and all the pixels in that square are weighted equally. Of course, there's no limit to the complexity of the window or the weighting we use. For example, in a Gaussian filter, the window approximates a circle and the weights are based on a Gaussian (normal) distribution. Formally, the window together with its weighting function is called the "kernel" and the process of applying this kernel to an image is called "convolution."</span></p>
+<p class="p4"><span class="s2">If all this went over your head, don't worry. It's most intuitive to see this visually. If you Google "kernel convolution" you'll find many diagrams. I also encourage you to check out the slides from this tutorial (<a href="https://github.com/WhoIsJack/python-bioimage-analysis-tutorial"><span class="s13">https://github.com/WhoIsJack/python-bioimage-analysis-tutorial</span></a>), which have a step-by-step demonstration of a convolution on a 1D array.</span></p>
+<p class="p4"><span class="s2">Anyway, fortunately we don't have to worry about the details of this process, since other people have already coded it for us. Though scipy has an image-processing module, it's a little sparse, so we'll instead be using scikit-image, which has all the same basic functions as scipy, in addition to many others. We'll first test it on the single slice we were using earlier.</span></p>
+<p class="p8"><span class="s2">In [36]:</span></p>
+<p class="p10"><span class="s10">%</span><span class="s1"><b>matplotlib</b></span><span class="s8"> inline</span></p>
+<p class="p12"><span class="s1">image </span><span class="s10">=</span><span class="s1"> tchzstack[</span><span class="s10">20</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">3</span><span class="s1">]</span></p>
+<p class="p12"><span class="s1">blur </span><span class="s10">=</span><span class="s1"> filters</span><span class="s10">.</span><span class="s1">gaussian(image, sigma</span><span class="s10">=3</span><span class="s1">)</span></p>
+<p class="p12"><span class="s1">fig, (ax1, ax2) </span><span class="s10">=</span><span class="s1"> plt</span><span class="s10">.</span><span class="s1">subplots(</span><span class="s10">1</span><span class="s1">, </span><span class="s10">2</span><span class="s1">, figsize</span><span class="s10">=</span><span class="s1">(</span><span class="s10">15</span><span class="s1">,</span><span class="s10">9</span><span class="s1">))</span></p>
+<p class="p12"><span class="s1">ax1</span><span class="s10">.</span><span class="s1">imshow(image);</span></p>
+<p class="p12"><span class="s1">ax2</span><span class="s10">.</span><span class="s1">imshow(blur);</span></p>
+<p class="p16"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><img src="file:///unknown_2.png" alt="unknown_2.png"></span><span class="s2"><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">On the left is the original image, and on the right is the filtered one. You can see it's been aggressively blurred, which was intentionally done to demonstrate its effect. We can always dial it back later by decreasing sigma, which is effectively the radius of our kernel.</span></p>
+<p class="p4"><span class="s2">You might notice the blurred image appears more intense, which is actually an artifact of how matplotlib displays images. It automatically scales the color bar between the maximum and minimum value. This is usually convenient, but it can sometimes trick our eyes. We can manually set the maximum and minimum value of the color bar with the </span><span class="s12">vmin</span><span class="s2"> and </span><span class="s12">vmax</span><span class="s2"> parameters of </span><span class="s12">imshow</span><span class="s2">.</span></p>
+<p class="p4"><span class="s2">How do actually decide where to set sigma? From my experience, this is more art than science, unfortunately. I've spent an inordinate amount of time stuck in a loop of applying a filter and displaying the image in an attempt to find the best parameters. I eventually wrote a modified version of the </span><span class="s12">viewer</span><span class="s2"> function that streamlined this process. In yet another burst of creativity, I called it </span><span class="s12">viewer_filter</span><span class="s2">. Let's use it on our image and the Gaussian filter. It has a somewhat involved set of parameters, so I'll first write the entire function call and unpack it afterwards.</span></p>
+<p class="p8"><span class="s2">In [37]:</span></p>
+<p class="p10"><span class="s10">%</span><span class="s1"><b>matplotlib</b></span><span class="s8"> qt</span></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">viewer_filter(tchzstack, filters</span><span class="s10">.</span><span class="s1">gaussian, {</span><span class="s11">'sigma'</span><span class="s1">: (</span><span class="s10">0</span><span class="s1">, </span><span class="s10">10</span><span class="s1">, </span><span class="s10">5</span><span class="s1">, </span><span class="s10">0.5</span><span class="s1">)}, labels</span><span class="s10">=</span><span class="s1">(</span><span class="s11">'t'</span><span class="s1">, </span><span class="s11">'ch'</span><span class="s1">, </span><span class="s11">'z'</span><span class="s1">))</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">The first two arguments are fairly straightforward. Notice, however, </span><span class="s12">filters.gaussian</span><span class="s2"> does not have parentheses. This means we're referencing the function by name rather than actually executing it. The third argument dictates the slider parameters and is the most complex. It's a dictionary where each parameter in the filter function is keyed by its name to a tuple of (min slider value, max slider value, initial slider value, slider increment). The last argument are labels for the sliders that slice the stack.</span></p>
+<p class="p4"><span class="s2">There are also </span><span class="s12">vmin</span><span class="s2"> and </span><span class="s12">vmax</span><span class="s2"> arguments that were my attempt to rectify the normalization issues I mentioned previously, but I still have to work out some bugs before they're useable.</span></p>
+<p class="p4"><span class="s2">As a quick note, scikit-image's filters generalize to ndarrays. This means filtering a single image will yield a different result than filtering a z-stack, since the latter is averaging over the additional z dimension. If you feed the filter an entire tchzstack, it will average over time and channels too, which is probably not what you want, so be mindful of your inputs.</span></p>
+<p class="p4"><span class="s2">vu has a second viewer_filter function called </span><span class="s12">viewer1_filter</span><span class="s2">, which presents a before and after view.</span></p>
+<p class="p8"><span class="s2">In [38]:</span></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">viewer2_filter(tchzstack, filters</span><span class="s10">.</span><span class="s1">gaussian, {</span><span class="s11">'sigma'</span><span class="s1">: (</span><span class="s10">0</span><span class="s1">, </span><span class="s10">10</span><span class="s1">, </span><span class="s10">5</span><span class="s1">, </span><span class="s10">0.5</span><span class="s1">)}, labels</span><span class="s10">=</span><span class="s1">(</span><span class="s11">'t'</span><span class="s1">, </span><span class="s11">'ch'</span><span class="s1">, </span><span class="s11">'z'</span><span class="s1">))</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2">We can combine filters in increasingly complex ways as well! Check out the following two, which implement a nearly complete thresholding pipeline.</span></p>
+<p class="p8"><span class="s2">In [41]:</span></p>
+<p class="p15"><span class="s7"><b>def</b></span><span class="s8"> </span><span class="s9">DoG</span><span class="s8">(im, s1, s2):<span class="Apple-converted-space">  </span></span><span class="s1"><i># difference of gaussians (contrast enhancer)</i></span></p>
+<p class="p12"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s7"><b>return</b></span><span class="s1"> filters</span><span class="s10">.</span><span class="s1">gaussian(im, s1) </span><span class="s10">-</span><span class="s1"> filters</span><span class="s10">.</span><span class="s1">gaussian(im, s2)</span></p>
+<p class="p11"><span class="s1"></span><br></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">viewer_filter(tchzstack, DoG, {</span><span class="s11">'s1'</span><span class="s1">: (</span><span class="s10">0</span><span class="s1">, </span><span class="s10">5</span><span class="s1">, </span><span class="s10">0.1</span><span class="s1">, </span><span class="s10">0.1</span><span class="s1">), </span><span class="s11">'s2'</span><span class="s1">: (</span><span class="s10">0</span><span class="s1">, </span><span class="s10">10</span><span class="s1">, </span><span class="s10">0.5</span><span class="s1">, </span><span class="s10">0.5</span><span class="s1">)}, (</span><span class="s11">'t'</span><span class="s1">, </span><span class="s11">'ch'</span><span class="s1">, </span><span class="s11">'z'</span><span class="s1">))</span></p>
+<p class="p12"><span class="s1">vu</span><span class="s10">.</span><span class="s1">viewer_filter(tchzstack, </span><span class="s7"><b>lambda</b></span><span class="s1"> im, s1, s2, thresh: DoG(im, s1, s2) </span><span class="s10">&gt;</span><span class="s1"> thresh, {</span><span class="s11">'s1'</span><span class="s1">: (</span><span class="s10">0</span><span class="s1">, </span><span class="s10">5</span><span class="s1">, </span><span class="s10">0.1</span><span class="s1">, </span><span class="s10">0.1</span><span class="s1">), </span><span class="s11">'s2'</span><span class="s1">: (</span><span class="s10">0</span><span class="s1">, </span><span class="s10">10</span><span class="s1">, </span><span class="s10">0.5</span><span class="s1">, </span><span class="s10">0.5</span><span class="s1">), </span><span class="s11">'thresh'</span><span class="s1">: (</span><span class="s10">0</span><span class="s1">, </span><span class="s10">0.25</span><span class="s1">, </span><span class="s10">0</span><span class="s1">, </span><span class="s10">0.005</span><span class="s1">)}, (</span><span class="s11">'t'</span><span class="s1">, </span><span class="s11">'ch'</span><span class="s1">, </span><span class="s11">'z'</span><span class="s1">))</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 21.0px; font: 22.0px 'Helvetica Neue'; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>Conclusion</b></span><span class="s3"><b>¶</b></span></h2>
+<p class="p4"><span class="s2">Anyway, I'll bring it to a close here. We've really only scratched the surface of image analysis so far. In the future, hopefully we can continue to dive into more advanced filters, including morphological filters, applying filters and thresholds in bulk, and converting raw microscopy data to RGB images.</span></p>
+</body>
+</html>

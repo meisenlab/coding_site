@@ -17,13 +17,15 @@ Zoom: [link](https://berkeley.zoom.us/j/6286606816)
 
 | ﻿Date               | Time    | Lead  | Title                                   |
 |--------------------|---------|-------|-----------------------------------------|
-| Tuesday, April 7   | 11:00am | Marc  | Intro to Image Analysis                 |
-| Thursday, April 2 | 11:00am  | Ciera | matplotlib Colors                  |
-| Tuesday, March 31  | 12:00pm | Stadler | Intro to matplotlib                  |
-| Monday, March 30   | 11:00am | Ciera | Making github hosted website Part 2     |
-| Thursday, March 26 | 11:00am | Jenna | Introduction to .czi files Part 1       |
-| Tuesday, March 24  | 12:00pm | Jenna | Introduction to .czi files Part 1 and 2 |
-| Monday, March 23   | 11:00am | Ciera | Making github hosted website Part 1     |
+| Tuesday, April 14   | 11:00am | Marc  | Intro to Image Analysis - Wigets       |
+| Thursday, April 9   | 11:00am | Jenna | Savio Sign Up!                         |
+| Tuesday, April 7   | 11:00am | Marc  | Intro to Image Analysis Pt1 - Slices    |
+| Thursday, April 2 | 11:00am  | Ciera | matplotlib Colors                       |
+| Tuesday, March 31  | 12:00pm | Stadler | Intro to matplotlib                   |
+| Monday, March 30   | 11:00am | Ciera | Making github hosted website Pt 2       |
+| Thursday, March 26 | 11:00am | Jenna | Introduction to .czi files Pt 1         |
+| Tuesday, March 24  | 12:00pm | Jenna | Introduction to .czi files Pt 1 and 2   |
+| Monday, March 23   | 11:00am | Ciera | Making github hosted website Pt 1       |
 
 
 

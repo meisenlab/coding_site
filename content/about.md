@@ -17,10 +17,13 @@ Zoom: [link](https://berkeley.zoom.us/j/6286606816)
 
 | ﻿Date               | Time    | Lead  | Title                                   |
 |--------------------|---------|-------|-----------------------------------------|
-| Tuesday, April 14   | 11:00am | Marc  | Intro to Image Analysis - Wigets       |
-| Thursday, April 9   | 11:00am | Jenna | Savio Sign Up!                         |
+| Thursday, April 13 | 11:00am | Eisen  | IDR pt 2                             |
+| Tuesday, April 21  | 11:00am | Colleen  | IDR pt 1                            |
+| Tuesday, April 16  | 11:00am | Group  | Save for Savio                          |
+| Tuesday, April 14  | 11:00am | Marc  | Intro to Image Analysis - Wigets       |
+| Thursday, April 9  | 11:00am | Jenna | Savio Sign Up!                         |
 | Tuesday, April 7   | 11:00am | Marc  | Intro to Image Analysis Pt1 - Slices    |
-| Thursday, April 2 | 11:00am  | Ciera | matplotlib Colors                       |
+| Thursday, April 2  | 11:00am | Ciera | matplotlib Colors                       |
 | Tuesday, March 31  | 12:00pm | Stadler | Intro to matplotlib                   |
 | Monday, March 30   | 11:00am | Ciera | Making github hosted website Pt 2       |
 | Thursday, March 26 | 11:00am | Jenna | Introduction to .czi files Pt 1         |

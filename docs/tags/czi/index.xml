@@ -6,17 +6,26 @@
     <description>Recent content in czi on Eisen Lab Coding Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2020 09:54:08 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2020 09:54:08 -0700</lastBuildDate>
     
 	<atom:link href="https://meisenlab.github.io/coding_site/tags/czi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Image Analysis 1 (Jupyter): Slicing, Filters and Sliders 1</title>
+      <link>https://meisenlab.github.io/coding_site/posts/image_analysis_jupyter/</link>
+      <pubDate>Tue, 14 Apr 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/image_analysis_jupyter/</guid>
+      <description>Starting to explore image analysis by learning how to slice a stack, apply filters, and create sliders.</description>
+    </item>
+    
+    <item>
       <title>Image Analysis 1: Slicing, Filters and Sliders 1</title>
-      <link>https://meisenlab.github.io/coding_site/posts/image_analysis_1/</link>
+      <link>https://meisenlab.github.io/coding_site/posts/image_analysis_qt/</link>
       <pubDate>Tue, 07 Apr 2020 09:54:08 -0700</pubDate>
       
-      <guid>https://meisenlab.github.io/coding_site/posts/image_analysis_1/</guid>
+      <guid>https://meisenlab.github.io/coding_site/posts/image_analysis_qt/</guid>
       <description>Starting to explore image analysis by learning how to slice a stack, apply filters, and create sliders.</description>
     </item>
     

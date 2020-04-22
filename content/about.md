@@ -17,7 +17,8 @@ Zoom: [link](https://berkeley.zoom.us/j/6286606816)
 
 | ﻿Date               | Time    | Lead  | Title                                   |
 |--------------------|---------|-------|-----------------------------------------|
-| Thursday, April 13 | 11:00am | Eisen  | IDR pt 2                             |
+| Thursday, April 28 | 11:00am | Eisen | IDR pt 2                             |
+| Thursday, April 23 | 11:00am | All  | Lets all learn about Python classes         |
 | Tuesday, April 21  | 11:00am | Colleen  | IDR pt 1                            |
 | Tuesday, April 16  | 11:00am | Group  | Save for Savio                          |
 | Tuesday, April 14  | 11:00am | Marc  | Intro to Image Analysis - Wigets       |

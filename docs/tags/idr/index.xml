@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDR on Eisen Lab Coding Club</title>
+    <link>https://meisenlab.github.io/coding_site/tags/idr/</link>
+    <description>Recent content in IDR on Eisen Lab Coding Club</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 09:54:08 -0700</lastBuildDate>
+    
+	<atom:link href="https://meisenlab.github.io/coding_site/tags/idr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IDR Part 1: Parsing a GFF File</title>
+      <link>https://meisenlab.github.io/coding_site/posts/idr_part1/</link>
+      <pubDate>Tue, 21 Apr 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/idr_part1/</guid>
+      <description>Parsing a GFF file in Python using classes.</description>
+    </item>
+    
+  </channel>
+</rss>

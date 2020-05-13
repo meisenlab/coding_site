@@ -17,8 +17,16 @@ Zoom: [link](https://berkeley.zoom.us/j/6286606816)
 
 | ﻿Date               | Time    | Lead  | Title                                   |
 |--------------------|---------|-------|-----------------------------------------|
-| Thursday, April 28 | 11:00am | Eisen | IDR pt 2                             |
-| Thursday, April 23 | 11:00am | All  | Lets all learn about Python classes         |
+| Thursday, May 28   | 10:30am | Ciera and Sam | MS2 vis part 2                  |
+| Tuesday, May 16  | 11:00am | Ciera and Sam| MS2 part 1                            |
+| Thursday, May 21   | 10:30am | Colleen | HMM part 1                            |
+| Tuesday, May 19   | 11:00am | Colleen | HMM part 1                            |
+| Thursday, May 15   | 10:30am | Jenna  | Protocol Standards                      |
+| Thuesday, May 12   | 11:00am | All | Where to go next?                       |
+| Thursday, May 7   | 10:30am | Jenna | Protocols and Collaborative Github      |
+| Tuesday, May 5   | 11:00am | Stadler | Python Classes tutorial                  |
+| Thursday, April 30 | 11:00am | All | Python Classes cont                       |
+| Tuesday, April 23 | 11:00am | All  | Lets all learn about Python classes      |
 | Tuesday, April 21  | 11:00am | Colleen  | IDR pt 1                            |
 | Tuesday, April 16  | 11:00am | Group  | Save for Savio                          |
 | Tuesday, April 14  | 11:00am | Marc  | Intro to Image Analysis - Wigets       |

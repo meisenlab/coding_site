@@ -18,7 +18,7 @@ Zoom: [link](https://berkeley.zoom.us/j/6286606816)
 | ﻿Date               | Time    | Lead  | Title                                   |
 |--------------------|---------|-------|-----------------------------------------|
 | Thursday, May 28   | 10:30am | Ciera and Sam | MS2 vis part 2                  |
-| Tuesday, May 16  | 11:00am | Ciera and Sam| MS2 part 1                            |
+| Tuesday, May 16  | 11:00am | Ciera and Sam| MS2 vis part 1                            |
 | Thursday, May 21   | 10:30am | Colleen | HMM part 1                            |
 | Tuesday, May 19   | 11:00am | Colleen | HMM part 1                            |
 | Thursday, May 15   | 10:30am | Jenna  | Protocol Standards                      |

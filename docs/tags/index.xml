@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Eisen Lab Coding Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2020 09:54:08 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2020 09:54:08 -0700</lastBuildDate>
     
 	<atom:link href="https://meisenlab.github.io/coding_site/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>colleen</title>
+      <link>https://meisenlab.github.io/coding_site/tags/colleen/</link>
+      <pubDate>Tue, 19 May 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/tags/colleen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HMM</title>
+      <link>https://meisenlab.github.io/coding_site/tags/hmm/</link>
+      <pubDate>Tue, 19 May 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/tags/hmm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://meisenlab.github.io/coding_site/tags/tutorial/</link>
+      <pubDate>Tue, 19 May 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/tags/tutorial/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>matplotlib</title>
@@ -30,15 +57,6 @@
     </item>
     
     <item>
-      <title>tutorial</title>
-      <link>https://meisenlab.github.io/coding_site/tags/tutorial/</link>
-      <pubDate>Tue, 05 May 2020 09:54:08 -0700</pubDate>
-      
-      <guid>https://meisenlab.github.io/coding_site/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>boss mike</title>
       <link>https://meisenlab.github.io/coding_site/tags/boss-mike/</link>
       <pubDate>Tue, 21 Apr 2020 09:54:08 -0700</pubDate>
@@ -48,29 +66,11 @@
     </item>
     
     <item>
-      <title>colleen</title>
-      <link>https://meisenlab.github.io/coding_site/tags/colleen/</link>
-      <pubDate>Tue, 21 Apr 2020 09:54:08 -0700</pubDate>
-      
-      <guid>https://meisenlab.github.io/coding_site/tags/colleen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>GFF</title>
       <link>https://meisenlab.github.io/coding_site/tags/gff/</link>
       <pubDate>Tue, 21 Apr 2020 09:54:08 -0700</pubDate>
       
       <guid>https://meisenlab.github.io/coding_site/tags/gff/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HMM</title>
-      <link>https://meisenlab.github.io/coding_site/tags/hmm/</link>
-      <pubDate>Tue, 21 Apr 2020 09:54:08 -0700</pubDate>
-      
-      <guid>https://meisenlab.github.io/coding_site/tags/hmm/</guid>
       <description></description>
     </item>
     

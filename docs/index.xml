@@ -22,6 +22,15 @@
     
     <item>
       <title>IDR Part 1: Parsing a GFF File</title>
+      <link>https://meisenlab.github.io/coding_site/posts/hmm_part1/</link>
+      <pubDate>Tue, 21 Apr 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/hmm_part1/</guid>
+      <description>Learning about Hidden Markov Modelling (HMM)</description>
+    </item>
+    
+    <item>
+      <title>IDR Part 1: Parsing a GFF File</title>
       <link>https://meisenlab.github.io/coding_site/posts/idr_part1/</link>
       <pubDate>Tue, 21 Apr 2020 09:54:08 -0700</pubDate>
       

@@ -17,27 +17,28 @@ Zoom: [link](https://berkeley.zoom.us/j/6286606816)
 
 | ﻿Date               | Time    | Lead  | Title                                   |
 |--------------------|---------|-------|-----------------------------------------|
-| Thursday, May 28   | 10:30am | Ciera and Sam | MS2 vis part 2                  |
-| Tuesday, May 16  | 11:00am | Ciera and Sam| MS2 vis part 1                            |
-| Thursday, May 21   | 10:30am | Colleen | HMM part 1                            |
-| Tuesday, May 19   | 11:00am | Colleen | HMM part 1                            |
-| Thursday, May 15   | 10:30am | Jenna  | Protocol Standards                      |
+| Thursday, June 11   | 10:30am | Ciera and Sam | [Pipeline Generality](https://meisenlab.github.io/coding_site/posts/pipeline_fragility/)            |
+| Tuesday, June 9  | 11:00am | Ciera | [MS2 Pipeline in Python](https://meisenlab.github.io/coding_site/posts/ciera_ms2_pipeline/)|
+| Thursday, May 28   | 10:30am | Ciera | [Approaching large Comp Projects](https://meisenlab.github.io/coding_site/posts/approaching_comp_proj/)         |
+| Thursday, May 21   | 10:30am | Colleen | [HMM part 1](https://meisenlab.github.io/coding_site/posts/hmm_part1/)                           |
+| Tuesday, May 19   | 11:00am | Colleen | [HMM part 1](https://meisenlab.github.io/coding_site/posts/hmm_part1/)                           |
+| Thursday, May 15   | 10:30am | Jenna  | [Protocol Standards](https://github.com/meisenlab/wetlab)                      |
 | Thuesday, May 12   | 11:00am | All | Where to go next?                       |
 | Thursday, May 7   | 10:30am | Jenna | Protocols and Collaborative Github      |
-| Tuesday, May 5   | 11:00am | Stadler | Python Classes tutorial                  |
+| Tuesday, May 5   | 11:00am | Stadler | [Python Classes tutorial](https://meisenlab.github.io/coding_site/posts/classestut/)                  |
 | Thursday, April 30 | 11:00am | All | Python Classes cont                       |
 | Tuesday, April 23 | 11:00am | All  | Lets all learn about Python classes      |
-| Tuesday, April 21  | 11:00am | Colleen  | IDR pt 1                            |
+| Tuesday, April 21  | 11:00am | Colleen  | [Parsing GFF Files](https://meisenlab.github.io/coding_site/posts/idr_part1/)                           |
 | Tuesday, April 16  | 11:00am | Group  | Save for Savio                          |
-| Tuesday, April 14  | 11:00am | Marc  | Intro to Image Analysis - Wigets       |
+| Tuesday, April 14  | 11:00am | Marc  | [Intro to Image Analysis - Wigets](https://meisenlab.github.io/coding_site/posts/idr_part1/)       |
 | Thursday, April 9  | 11:00am | Jenna | Savio Sign Up!                         |
-| Tuesday, April 7   | 11:00am | Marc  | Intro to Image Analysis Pt1 - Slices    |
-| Thursday, April 2  | 11:00am | Ciera | matplotlib Colors                       |
-| Tuesday, March 31  | 12:00pm | Stadler | Intro to matplotlib                   |
+| Tuesday, April 7   | 11:00am | Marc  | [Intro to Image Analysis Pt1 - Slices](https://meisenlab.github.io/coding_site/posts/image_analysis_jupyter/)    |
+| Thursday, April 2  | 11:00am | Ciera | [matplotlib Colors](https://meisenlab.github.io/coding_site/posts/matplotlib_colors/)                       |
+| Tuesday, March 31  | 12:00pm | Stadler | [Intro to matplotlib](https://meisenlab.github.io/coding_site/posts/matplotlib/)                |
 | Monday, March 30   | 11:00am | Ciera | Making github hosted website Pt 2       |
-| Thursday, March 26 | 11:00am | Jenna | Introduction to .czi files Pt 1         |
-| Tuesday, March 24  | 12:00pm | Jenna | Introduction to .czi files Pt 1 and 2   |
-| Monday, March 23   | 11:00am | Ciera | Making github hosted website Pt 1       |
+| Thursday, March 26 | 11:00am | Jenna | [Introduction to .czi files Pt 2](https://meisenlab.github.io/coding_site/posts/czi_intro_part2/)        |
+| Tuesday, March 24  | 12:00pm | Jenna | [Introduction to .czi files Pt 1](https://meisenlab.github.io/coding_site/posts/czi_intro_part1/)   |
+| Monday, March 23   | 11:00am | Ciera | [Making github hosted website](https://meisenlab.github.io/coding_site/posts/building_website/)     |
 
 
 

@@ -6,10 +6,19 @@
     <description>Recent content in ciera on Eisen Lab Coding Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 09:54:08 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2020 09:54:08 -0700</lastBuildDate>
     
 	<atom:link href="https://meisenlab.github.io/coding_site/tags/ciera/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Testing Pipeline Generality</title>
+      <link>https://meisenlab.github.io/coding_site/posts/pipeline_fragility/</link>
+      <pubDate>Wed, 10 Jun 2020 09:54:08 -0700</pubDate>
+      
+      <guid>https://meisenlab.github.io/coding_site/posts/pipeline_fragility/</guid>
+      <description>Testing the fragility of the MS2 pipeline.</description>
+    </item>
     
     <item>
       <title>A Pipeline for Segmenting MS2 Confocal Data</title>
